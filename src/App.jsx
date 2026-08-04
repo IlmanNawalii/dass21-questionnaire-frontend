@@ -326,7 +326,7 @@ function App() {
                   </div>
 
                 <div className="summary-note">
-                    <strong>Catatan:</strong> 
+                    <strong>Catatan: </strong> 
                     Hasil ini merupakan ringkasan skor berdasarkan jawaban Anda
                     dan bukan diagnosis atau penetapan kondisi kesehatan mental.
                     <br/><br/>
