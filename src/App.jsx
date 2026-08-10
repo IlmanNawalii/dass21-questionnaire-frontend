@@ -292,7 +292,7 @@ function App() {
             Jawaban kuesioner Anda telah berhasil dikirim dan diterima untuk
             keperluan penelitian.
           </p>
-          {summary && (
+          {/* {summary && (
               <div className="summary-section">
 
                   <h2>Ringkasan DASS-21</h2>
@@ -336,6 +336,35 @@ function App() {
                     yang Anda percaya, seperti orang tua, guru, wali kelas, atau
                     orang terdekat.
                 </div>
+
+              </div>
+          )} */}
+          {summary && (
+              <div className="summary-section">
+
+                  <h2>Terima Kasih Telah Berpartisipasi</h2>
+
+                  <p className="muted">
+                      Kuesioner Anda telah selesai diisi dan jawaban Anda
+                      telah berhasil direkam untuk keperluan penelitian.
+                  </p>
+
+                  <div className="summary-note">
+                      <strong>Catatan: </strong>
+                      Jawaban yang Anda berikan akan digunakan untuk keperluan
+                      penelitian dan dijaga kerahasiaannya. Kuesioner ini bukan
+                      alat diagnosis medis dan hasil pengisian tidak digunakan
+                      untuk menetapkan kondisi kesehatan mental seseorang.
+
+                      <br /><br />
+
+                      Jika setelah mengisi kuesioner Anda merasa khawatir,
+                      tidak nyaman, atau ingin bercerita mengenai apa yang Anda
+                      rasakan, ingat bahwa Anda tidak harus menghadapinya
+                      sendirian. Anda dapat berbicara dengan orang yang Anda
+                      percaya, seperti orang tua, guru, wali kelas, atau
+                      orang terdekat.
+                  </div>
 
               </div>
           )}
