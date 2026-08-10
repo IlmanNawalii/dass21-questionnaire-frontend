@@ -450,9 +450,8 @@ function App() {
               </p>
 
               <div className="research-title">
-                  “Pengembangan dan Evaluasi Komparatif Model Machine Learning
-                  untuk Prediksi Risiko Kesehatan Mental pada Siswa SMA X
-                  Berbasis Survei DASS-21”
+                  “Analisis Profil dan Prediksi Risiko Kesehatan Mental Siswa SMA Berdasarkan DASS-21 
+                  dan Faktor Kontekstual Menggunakan Machine Learning”
               </div>
 
               <p>
