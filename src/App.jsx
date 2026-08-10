@@ -282,98 +282,142 @@ function App() {
     }
   };
 
+  // if (step === "success") {
+  //   return (
+  //     <main className="page">
+  //       <section className="card success-card">
+  //         <div className="success-icon">✓</div>
+  //         <h1>Terima kasih!</h1>
+  //         <p>
+  //           Jawaban kuesioner Anda telah berhasil dikirim dan diterima untuk
+  //           keperluan penelitian.
+  //         </p>
+  //         {/* {summary && (
+  //             <div className="summary-section">
+
+  //                 <h2>Ringkasan DASS-21</h2>
+
+  //                 <p className="muted">
+  //                     Berikut adalah hasil perhitungan berdasarkan jawaban DASS-21 Anda.
+  //                 </p>
+
+  //                 <div className="summary-grid">
+
+  //                     {Object.entries(summary).map(([dimension, result]) => (
+
+  //                         <div className="summary-card" key={dimension}>
+
+  //                             <span className="summary-label">
+  //                                 {dimension}
+  //                             </span>
+
+  //                             <strong className="summary-score">
+  //                                 {result.score}
+  //                             </strong>
+
+  //                             <span className="summary-category">
+  //                                 {result.category}
+  //                             </span>
+
+  //                         </div>
+
+  //                     ))}
+
+  //                 </div>
+
+  //               <div className="summary-note">
+  //                   <strong>Catatan: </strong> 
+  //                   Hasil ini merupakan ringkasan skor berdasarkan jawaban Anda
+  //                   dan bukan diagnosis atau penetapan kondisi kesehatan mental.
+  //                   <br/><br/>
+  //                   Jika setelah mengisi kuesioner Anda merasa khawatir, tidak nyaman,
+  //                   atau ingin bercerita mengenai apa yang Anda rasakan, Anda tidak
+  //                   harus menghadapinya sendirian. Anda dapat berbicara dengan orang
+  //                   yang Anda percaya, seperti orang tua, guru, wali kelas, atau
+  //                   orang terdekat.
+  //               </div>
+
+  //             </div>
+  //         )} */}
+  //         {summary && (
+  //             <div className="summary-section">
+
+  //                 <h2>Terima Kasih Telah Berpartisipasi</h2>
+
+  //                 <p className="muted">
+  //                     Kuesioner Anda telah selesai diisi dan jawaban Anda
+  //                     telah berhasil direkam untuk keperluan penelitian.
+  //                 </p>
+
+  //                 <div className="summary-note">
+  //                     <strong>Catatan: </strong>
+  //                     Jawaban yang Anda berikan akan digunakan untuk keperluan
+  //                     penelitian dan dijaga kerahasiaannya. Kuesioner ini bukan
+  //                     alat diagnosis medis dan hasil pengisian tidak digunakan
+  //                     untuk menetapkan kondisi kesehatan mental seseorang.
+
+  //                     <br /><br />
+
+  //                     Jika setelah mengisi kuesioner Anda merasa khawatir,
+  //                     tidak nyaman, atau ingin bercerita mengenai apa yang Anda
+  //                     rasakan, ingat bahwa Anda tidak harus menghadapinya
+  //                     sendirian. Anda dapat berbicara dengan orang yang Anda
+  //                     percaya, seperti orang tua, guru, wali kelas, atau
+  //                     orang terdekat.
+  //                 </div>
+
+  //             </div>
+  //         )}
+  //         <p className="muted">
+  //           Anda dapat menutup halaman ini.
+  //         </p>
+  //       </section>
+  //     </main>
+  //   );
+  // }
   if (step === "success") {
-    return (
-      <main className="page">
-        <section className="card success-card">
-          <div className="success-icon">✓</div>
-          <h1>Terima kasih!</h1>
-          <p>
-            Jawaban kuesioner Anda telah berhasil dikirim dan diterima untuk
-            keperluan penelitian.
-          </p>
-          {/* {summary && (
-              <div className="summary-section">
+      return (
+          <main className="container">
+              <section className="card success-card">
 
-                  <h2>Ringkasan DASS-21</h2>
-
-                  <p className="muted">
-                      Berikut adalah hasil perhitungan berdasarkan jawaban DASS-21 Anda.
-                  </p>
-
-                  <div className="summary-grid">
-
-                      {Object.entries(summary).map(([dimension, result]) => (
-
-                          <div className="summary-card" key={dimension}>
-
-                              <span className="summary-label">
-                                  {dimension}
-                              </span>
-
-                              <strong className="summary-score">
-                                  {result.score}
-                              </strong>
-
-                              <span className="summary-category">
-                                  {result.category}
-                              </span>
-
-                          </div>
-
-                      ))}
-
+                  <div className="success-icon">
+                      ✓
                   </div>
 
-                <div className="summary-note">
-                    <strong>Catatan: </strong> 
-                    Hasil ini merupakan ringkasan skor berdasarkan jawaban Anda
-                    dan bukan diagnosis atau penetapan kondisi kesehatan mental.
-                    <br/><br/>
-                    Jika setelah mengisi kuesioner Anda merasa khawatir, tidak nyaman,
-                    atau ingin bercerita mengenai apa yang Anda rasakan, Anda tidak
-                    harus menghadapinya sendirian. Anda dapat berbicara dengan orang
-                    yang Anda percaya, seperti orang tua, guru, wali kelas, atau
-                    orang terdekat.
-                </div>
-
-              </div>
-          )} */}
-          {summary && (
-              <div className="summary-section">
-
-                  <h2>Terima Kasih Telah Berpartisipasi</h2>
+                  <h1>Terima kasih!</h1>
 
                   <p className="muted">
-                      Kuesioner Anda telah selesai diisi dan jawaban Anda
-                      telah berhasil direkam untuk keperluan penelitian.
+                      Jawaban kuesioner Anda telah berhasil dikirim dan
+                      diterima untuk keperluan penelitian.
                   </p>
 
                   <div className="summary-note">
-                      <strong>Catatan: </strong>
-                      Jawaban yang Anda berikan akan digunakan untuk keperluan
-                      penelitian dan dijaga kerahasiaannya. Kuesioner ini bukan
-                      alat diagnosis medis dan hasil pengisian tidak digunakan
-                      untuk menetapkan kondisi kesehatan mental seseorang.
+                      <strong>Catatan</strong>
 
-                      <br /><br />
+                      <p>
+                          Jawaban Anda akan digunakan untuk keperluan
+                          penelitian dan dijaga kerahasiaannya. Kuesioner ini
+                          bukan alat diagnosis medis dan hasil pengisian tidak
+                          digunakan untuk menetapkan kondisi kesehatan mental
+                          seseorang.
+                      </p>
 
-                      Jika setelah mengisi kuesioner Anda merasa khawatir,
-                      tidak nyaman, atau ingin bercerita mengenai apa yang Anda
-                      rasakan, ingat bahwa Anda tidak harus menghadapinya
-                      sendirian. Anda dapat berbicara dengan orang yang Anda
-                      percaya, seperti orang tua, guru, wali kelas, atau
-                      orang terdekat.
+                      <p>
+                          Jika setelah mengisi kuesioner Anda merasa khawatir,
+                          tidak nyaman, atau ingin bercerita mengenai apa yang
+                          Anda rasakan, Anda tidak harus menghadapinya sendirian.
+                          Anda dapat berbicara dengan orang yang Anda percaya,
+                          seperti orang tua, guru, wali kelas, atau orang terdekat.
+                      </p>
                   </div>
 
-              </div>
-          )}
-          <p className="muted">
-            Anda dapat menutup halaman ini.
-          </p>
-        </section>
-      </main>
-    );
+                  <p className="muted">
+                      Anda dapat menutup halaman ini.
+                  </p>
+
+              </section>
+          </main>
+      );
   }
 
   return (
