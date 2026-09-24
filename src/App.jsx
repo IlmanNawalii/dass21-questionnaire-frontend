@@ -292,7 +292,7 @@ function App() {
             Jawaban kuesioner Anda telah berhasil dikirim dan diterima untuk
             keperluan penelitian.
           </p>
-          {summary && (
+          {/* {summary && (
               <div className="summary-section">
 
                   <h2>Ringkasan DASS-21</h2>
@@ -338,8 +338,8 @@ function App() {
                 </div>
 
               </div>
-          )}
-          {/* {summary && (
+          )} */}
+          {summary && (
               <div className="summary-section">
 
                   <h2>Terima Kasih Telah Berpartisipasi</h2>
@@ -367,7 +367,7 @@ function App() {
                   </div>
 
               </div>
-          )} */}
+          )}
           <p className="muted">
             Anda dapat menutup halaman ini.
           </p>
